@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Ano - Instituto Pomus | Celebração</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- AOS CSS (Animações) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Swiper CSS (Carrossel) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    
+    <!-- Estilos Customizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Audio Player Nativo (Sem bloqueios de iframe) -->
+    <audio id="bg-audio" loop>
+        <!-- Faixa de Bossa Jazz Instrumental: Piano Suave e Relaxante -->
+        <source src="https://archive.org/download/instrumental-organ-bossa-nova/bossa-nova-piano-instrumental-brasil-5732.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Floating Music Button -->
+    <button id="music-btn" class="music-btn">
+        <span class="music-icon">🎵</span> Ligar Música
+    </button>
+
+    <!-- Floating Navigation Bar -->
+    <nav class="floating-nav">
+        <a href="#hero" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg></a>
+        <a href="#gallery" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg></a>
+        <a href="#rsvp" class="nav-link highlight"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></a>
+        <a href="https://instagram.com/institutopomus" target="_blank" class="nav-link" title="Nosso Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+        <a href="https://wa.me/5598984633233?text=Olá,%20tenho%20uma%20dúvida%20sobre%20o%20evento%20de%201%20ano!" target="_blank" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></a>
+    </nav>
+
+    <!-- SECTION: HERO -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-slider">
+            <div class="slide slide-1" style="background-image: url('assets/identidade.jpg')"></div>
+            <div class="slide slide-2" style="background-image: url('assets/gallery/amalfi_bg.jpg')"></div>
+            <div class="slide slide-3" style="background-image: url('assets/gallery/Lamai.jpg')"></div>
+            <div class="overlay"></div>
+        </div>
+        
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1500">
+            <p class="pre-title">CONVITE ESPECIAL</p>
+            <img src="assets/logo-transparent.png" alt="Instituto Pomus" class="hero-logo">
+            <div class="badge">1 ANO</div>
+            <h1 class="main-title">Celebre Conosco</h1>
+            <p class="subtitle">Uma jornada de excelência, sorrisos e vidas transformadas.</p>
+            
+            <div class="scroll-indicator">
+                <span>Role para descobrir</span>
+                <div class="arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: COUNTDOWN & DETAILS -->
+    <section class="details-section">
+        <div class="container">
+            <div class="countdown-wrapper" data-aos="zoom-in" data-aos-duration="1000">
+                <h2>A contagem regressiva começou</h2>
+                <div id="countdown" class="countdown">
+                    <div class="time-box"><span id="days">00</span><p>Dias</p></div>
+                    <div class="time-box"><span id="hours">00</span><p>Horas</p></div>
+                    <div class="time-box"><span id="minutes">00</span><p>Minutos</p></div>
+                    <div class="time-box"><span id="seconds">00</span><p>Segundos</p></div>
+                </div>
+            </div>
+
+            <div class="event-info" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="info-card">
+                    <span class="icon">📅</span>
+                    <h3>Quando</h3>
+                    <p>30 de Junho de 2026</p>
+                    <button class="action-link" id="btn-calendar">Salvar na Agenda</button>
+                </div>
+                <div class="info-card">
+                    <span class="icon">🕒</span>
+                    <h3>Horário</h3>
+                    <p>17h às 21h</p>
+                    <a href="#rsvp" class="action-link">Confirmar</a>
+                </div>
+                <div class="info-card">
+                    <span class="icon">📍</span>
+                    <h3>Onde</h3>
+                    <p>Av. Daniel de La Touche, 6<br><span class="small-text">Cohama - São Luís, MA</span></p>
+                    <a href="https://waze.com/ul?q=Avenida+Daniel+de+La+Touche,+6,+Cohama,+MA" target="_blank" class="action-link">Abrir no Waze</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: OUR STORY -->
+    <section class="story-section" id="story">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-text" data-aos="fade-right" data-aos-duration="1000">
+                    <h2 class="section-title">A Nossa Essência</h2>
+                    <p>"Há exatamente um ano, plantamos uma semente chamada Instituto Pomus. Hoje, ao olharmos para essa jornada, celebramos muito mais do que o tempo: celebramos as vidas transformadas, a confiança depositada e os laços que construímos."</p>
+                    <p>Cada detalhe da nossa casa foi pensado para proporcionar excelência, e você é peça fundamental dessa história. Neste primeiro aniversário, queremos brindar aos novos ciclos que se iniciam.</p>
+                </div>
+                <div class="story-image" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="assets/convite1.png" alt="Amalfi Limões Estética" class="aesthetic-img">
+                    <div class="img-backdrop"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: GALLERY (CARROSSEL) -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section-title text-center" data-aos="fade-up">Moodboard da Celebração</h2>
+            <p class="text-center subtitle" data-aos="fade-up" data-aos-delay="100">Um vislumbre da atmosfera que preparamos para você.</p>
+            
+            <div class="swiper gallery-slider" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1200">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/gallery/11.jpg" alt="Galeria"></div>
+                    <div class="swiper-slide"><img src="assets/gallery/12.jpg" alt="Galeria"></div>
+                    <div class="swiper-slide"><img src="assets/gallery/13.jpg" alt="Galeria"></div>
+                    <div class="swiper-slide"><img src="assets/gallery/14.jpg" alt="Galeria"></div>
+                    <div class="swiper-slide"><img src="assets/gallery/15.jpg" alt="Galeria"></div>
+                    <div class="swiper-slide"><img src="assets/gallery/16.jpg" alt="Galeria"></div>
+                    <div class="swiper-slide"><img src="assets/gallery/17.jpg" alt="Galeria"></div>
+                    <div class="swiper-slide"><img src="assets/gallery/18.jpg" alt="Galeria"></div>
+                    <div class="swiper-slide"><img src="assets/gallery/Lamai.jpg" alt="Galeria"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: TIMELINE -->
+    <section class="timeline-section">
+        <div class="container">
+            <h2 class="section-title text-center" data-aos="fade-up">Programação</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="time">17:00</div>
+                    <div class="content">
+                        <h4>Recepção & Welcome Drinks</h4>
+                        <p>Chegada dos convidados ao som de Bossa Nova Jazz.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="time">18:30</div>
+                    <div class="content">
+                        <h4>O Brinde Especial</h4>
+                        <p>Um momento de palavras de agradecimento e brinde ao primeiro ano.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="time">19:00</div>
+                    <div class="content">
+                        <h4>Coquetel & Celebração</h4>
+                        <p>Aproveite a noite com finger foods e muita alegria.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: RSVP -->
+    <section class="rsvp-section" id="rsvp">
+        <div class="container">
+            <div class="rsvp-card" data-aos="zoom-in-up" data-aos-duration="1200">
+                <div id="rsvp-container">
+                    <h2 class="section-title text-center">Confirme sua Presença</h2>
+                    <p class="text-center subtitle">Sua presença é essencial. Por favor, confirme até o dia 25 de Junho.</p>
+                    
+                    <form id="rsvp-form" class="rsvp-form mt-4">
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="name">Nome Completo</label>
+                                <input type="text" id="name" name="name" required placeholder="Ex: Maria Silva">
+                            </div>
+                            <div class="input-group">
+                                <label for="whatsapp">WhatsApp</label>
+                                <input type="tel" id="whatsapp" name="whatsapp" required placeholder="(00) 00000-0000">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="companions">Irá levar acompanhante?</label>
+                            <select id="companions" name="companions">
+                                <option value="0">Não, irei sozinho(a)</option>
+                                <option value="1">Sim, 1 acompanhante</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn full-width mt-2">
+                            <span class="btn-text">Confirmar Presença ✨</span>
+                        </button>
+                    </form>
+
+                    <div id="success-message" class="success-message hidden">
+                        <div class="success-icon">🥂</div>
+                        <h3 class="section-title">Presença Confirmada!</h3>
+                        <p>Que alegria! Mal podemos esperar para celebrar este marco incrível com você.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container text-center">
+            <img src="assets/logo-transparent.png" alt="Instituto Pomus" class="footer-logo">
+            <p>Instituto Pomus © 2026. Todos os direitos reservados.</p>
+            <a href="https://instagram.com/institutopomus" target="_blank" style="color: rgba(255,255,255,0.7); display: inline-block; margin-top: 15px;">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
