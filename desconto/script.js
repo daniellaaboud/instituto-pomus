@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- 3. Countdown Timer ---
-    const targetDate = new Date("2026-06-30T17:00:00").getTime();
+    const targetDate = new Date("2026-07-02T17:00:00").getTime();
     
     const countdownElement = {
         days: document.getElementById("days"),
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- 7. Botão Salvar na Agenda ---
     const btnCalendar = document.getElementById('btn-calendar');
     btnCalendar.addEventListener('click', () => {
-        const eventUrl = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=1+Ano+Instituto+Pomus&dates=20260630T200000Z/20260701T010000Z&details=Celebração+de+1+ano+do+Instituto+Pomus.&location=Instituto+Pomus";
+        const eventUrl = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=1+Ano+Instituto+Pomus&dates=20260702T200000Z/20260703T010000Z&details=Celebração+de+1+ano+do+Instituto+Pomus.&location=Instituto+Pomus";
         window.open(eventUrl, '_blank');
     });
 
